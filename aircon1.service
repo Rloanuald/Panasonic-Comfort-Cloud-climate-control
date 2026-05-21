@@ -1,0 +1,15 @@
+[Unit]
+Description=Panasonic AirCon 1 Climate Control Automation Service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=admin
+WorkingDirectory=/home/admin/aircon-automation
+ExecStart=/home/admin/aircon-automation/venv/bin/python3 /home/admin/aircon-automation/climate_control.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
