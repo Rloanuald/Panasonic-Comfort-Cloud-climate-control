@@ -1,0 +1,12 @@
+# Exclude Python virtual environments
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Exclude local live logs and historical tracking files
+*.log
+climate1.log
+
+# Exclude hidden environment variable files
+.env
