@@ -178,7 +178,7 @@ def run_automation():
                                 fanspeed=pcomfortcloud.constants.FanSpeed.Auto,
                                 eco=pcomfortcloud.constants.EcoMode.Quiet,
                                 # Keep your perfect Heat Mode position
-                                airSwingDir=pcomfortcloud.constants.AirSwingUD.Mid
+                                airSwingVertical=pcomfortcloud.constants.AirSwingUD.Mid
                             )
                             cold_counter = 0
                 else:
@@ -197,7 +197,7 @@ def run_automation():
                         fanspeed=pcomfortcloud.constants.FanSpeed.Auto,
                         eco=pcomfortcloud.constants.EcoMode.Quiet,
                         # --- THE FIX: Drop it 1 step lower to counter the automatic firmware rise ---
-                        airSwingDir=pcomfortcloud.constants.AirSwingUD.UpMid
+                        airSwingVertical=pcomfortcloud.constants.AirSwingUD.UpMid
                     )
                 cold_counter = 0
 
